@@ -10,7 +10,7 @@ end
 
 gem 'paperclip'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2.3'
 gem 'figaro'
 
 gem 'bcrypt'
