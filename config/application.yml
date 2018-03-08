@@ -14,11 +14,11 @@ aws_access_key: AKIAILSI6A53FHG3UIBQ
 aws_secret_access_key: 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
 # added
 # secret_key_base: aa06dd83acc705f2d426f9ba873f2e28ce31b76f194c5120d56027e3507eb5edefdb17201b7b55f57151f4cc0582de841832da8a503fd974aeac8e00572e3a76
-# access_key_id: AKIAILSI6A53FHG3UIBQ
-# secret_access_key: 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
-# s3_region: 'us-east-2'
-# path: '/profileimages/:filename'
-# s3_host_name: 's3.us-east-2.amazonaws.com'
+access_key_id: AKIAILSI6A53FHG3UIBQ
+secret_access_key: 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
+s3_region: 'us-east-2'
+path: '/profileimages/:filename'
+s3_host_name: 's3.us-east-2.amazonaws.com'
 
 
 production:
