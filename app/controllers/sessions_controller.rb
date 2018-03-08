@@ -14,8 +14,7 @@ class SessionsController < ApplicationController
       flash[:message] = "Welcome #{@player.name}."
       redirect_to league_path(@player.league)
     else
-      byebug
-
+      # byebug
       # sign in failed
       flash[:message] = "Wrong username and password"
       redirect_to signin_path

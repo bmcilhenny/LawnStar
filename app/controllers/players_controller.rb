@@ -8,8 +8,10 @@ class PlayersController < ApplicationController
 #
   def create
     @player = Player.new(player_params)
+    # byebug
     if @player.valid?
       # @player.send_twilio_message(16093206378)
+
       @player.save
       session[:player_id] = @player.id
 
