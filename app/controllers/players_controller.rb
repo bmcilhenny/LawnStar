@@ -11,7 +11,7 @@ class PlayersController < ApplicationController
     # byebug
     if @player.valid?
       # @player.send_twilio_message(16093206378)
-      byebug
+      # byebug
       @player.save
       session[:player_id] = @player.id
 
