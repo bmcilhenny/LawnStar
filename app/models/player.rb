@@ -6,17 +6,17 @@ class Player < ApplicationRecord
   has_attached_file :image,
     styles: { small: "64x64", med: "100x100", large: "200x200" },
     :s3_protocol => 'https',
-    :s3_host_name => 's3.us-east-2.amazonaws.com',
-    :path => '/profileimages/:filename',
+    :s3_host_name => ENV['s3_host_name'],
+    :path => ENV['path'],
     :storage => 's3',
     :s3_credentials => Proc.new{|a| a.instance.s3_credentials},
-    :s3_region => 'us-east-2'
+    :s3_region => ENV['s3_region']
 
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
   validates :name, :password, presence: true
 
   def s3_credentials
-    {:bucket => 'lawnstar', :access_key_id => ENV['aws_access_key'], :secret_access_key => ENV['aws_secret_access_key']}
+    {:bucket => 'lawnstar', :access_key_id => ENV['access_key_id'], :secret_access_key => ENV['secret_access_key']}
   end
 
   def player_wins
