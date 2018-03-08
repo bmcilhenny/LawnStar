@@ -6,8 +6,8 @@ class Player < ApplicationRecord
   has_attached_file :image,
     styles: { small: "64x64", med: "100x100", large: "200x200" },
     :s3_protocol => 'https',
-    # :s3_host_name => 's3.us-east-2.amazonaws.com',
-    # :path => '/profileimages/:filename',
+    :s3_host_name => 's3.us-east-2.amazonaws.com',
+    :path => '/profileimages/:filename',
     :storage => 's3',
     :s3_credentials => Proc.new{|a| a.instance.s3_credentials},
     :s3_region => 'us-east-2'
