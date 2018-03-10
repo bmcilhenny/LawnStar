@@ -10,23 +10,4 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-
-
-aws_access_key: AKIAJNTNOVDAJZZ4SMXQ
-aws_secret_access_key: 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
-
-# secret_key_base: aa06dd83acc705f2d426f9ba873f2e28ce31b76f194c5120d56027e3507eb5edefdb17201b7b55f57151f4cc0582de841832da8a503fd974aeac8e00572e3a76
-access_key_id: AKIAJNTNOVDAJZZ4SMXQ
-secret_access_key: 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
-s3_region: 'us-east-2'
-path: '/profileimages/:filename'
-s3_host_name: 's3.us-east-2.amazonaws.com'
-bucket: 'lawnstar'
-
-production:
-  secret_key_base: aa06dd83acc705f2d426f9ba873f2e28ce31b76f194c5120d56027e3507eb5edefdb17201b7b55f57151f4cc0582de841832da8a503fd974aeac8e00572e3a76
-  access_key_id: AKIAJNTNOVDAJZZ4SMXQ
-  secret_access_key: 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
-  s3_region: 'us-east-2'
-  path: '/profileimages/:filename'
-  s3_host_name: 's3.us-east-2.amazonaws.com'
+#testing testing is this working
