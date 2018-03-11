@@ -10,7 +10,7 @@ class Player < ApplicationRecord
     :path => ENV['PATH'],
     :storage => 's3',
     :s3_credentials => Proc.new{|a| a.instance.s3_credentials},
-    :s3_region => ENV['S3_REGION']
+    :s3_region => ENV['AWS_REGION']
 
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
   validates :name, :password, presence: true
