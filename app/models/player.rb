@@ -16,7 +16,7 @@ class Player < ApplicationRecord
   validates :name, :password, presence: true
 
   def s3_credentials
-    {:bucket => ENV['bucket'], :access_key_id => ENV['access_key_id'], :secret_access_key => ENV['secret_access_key']}
+    {:bucket => ENV['s3_bucket'], :access_key_id => ENV['access_key_id'], :secret_access_key => ENV['secret_access_key']}
   end
 
   def player_wins
