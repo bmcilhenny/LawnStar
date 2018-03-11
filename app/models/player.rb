@@ -7,7 +7,7 @@ class Player < ApplicationRecord
     styles: { small: "64x64", med: "100x100", large: "200x200" },
     :s3_protocol => 'https',
     :s3_host_name => ENV['S3_HOST_NAME'],
-    :path => ENV['PATH'],
+    :path => ENV['S3_PATH'],
     :storage => 's3',
     :s3_credentials => Proc.new{|a| a.instance.s3_credentials},
     :s3_region => ENV['AWS_REGION']
